@@ -83,12 +83,39 @@ You now have SQL Server Express installed and configured on your Windows machine
 
 Remember, SQL Server Express has limitations compared to the full version of SQL Server, such as database size restrictions and reduced performance features. However, it remains an excellent option for small applications, lightweight web sites, and learning purposes.
 
+## Entity Framework Core Migrations
+
+__Step 1: Set Up Your Environment__
+
+Ensure you have the .NET SDK installed on your machine. You can download it from the official .NET download page.
+Install your preferred code editor or IDE. Visual Studio Code or Visual Studio are recommended for .NET development.
+
+__Step 2: Ensure you have the EF Core tools for the .NET CLI installed globally (or update them):__
+
+dotnet tool install --global dotnet-ef --version <version>
+
+or
+
+dotnet tool update --global dotnet-ef
+
+__Step 6: Create Your First Migration__
+
+Open a terminal in your project's root directory.
+Run the following command to create an initial migration:
+
+dotnet ef migrations add InitialCreate
+
+__Step 7: Update the Database__
+
+Apply the migration to your database to update its schema by running:
+
 ## Application Setup Guide for Windows
 
 __You have the option to configure either an in-memory store or SQL Server Express as the database.__
 
 ![image](https://github.com/aesteves900/requestService/assets/5515535/99090418-9385-4d0a-8102-b8fd40ad5fe0)
 
+dotnet ef database update
 
 ## How to Test the APIs
 
