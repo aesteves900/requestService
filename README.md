@@ -7,14 +7,17 @@ Follow these steps to install and configure RabbitMQ locally.
 __Prerequisites__
 Ensure you have Erlang OTP installed on your system. RabbitMQ requires Erlang to run.
 Installation Steps
+
 __Step 1: Install Erlang OTP__
 Download the Erlang OTP installer from the Erlang official website.
 Run the downloaded installer and follow the on-screen instructions to complete the installation.
 After installation, verify Erlang is correctly installed by opening a command prompt and typing erl. You should enter the Erlang shell.
+
 __Step 2: Install RabbitMQ__
 Download the RabbitMQ server installer from the RabbitMQ official website.
 Run the downloaded installer. Follow the instructions, and complete the installation process.
 RabbitMQ will be installed as a Windows service and start automatically.
+
 __Step 3: Enable RabbitMQ Management Plugin__
 The RabbitMQ Management Plugin provides a user-friendly web interface for managing your RabbitMQ server.
 
@@ -87,6 +90,7 @@ __You have the option to configure either an in-memory store or SQL Server Expre
 ![image](https://github.com/aesteves900/requestService/assets/5515535/99090418-9385-4d0a-8102-b8fd40ad5fe0)
 
 
+## How to Test the APIs
 
 __Step 1: Generate a JWT token through the Authentication API.__
 
@@ -108,7 +112,7 @@ The API belows post data into RebitMQ
 ![image](https://github.com/aesteves900/requestService/assets/5515535/ade48ef5-6b46-41ed-9ff7-b599266217ee)
 
 
- [RabitMQ Admin Toll](http://localhost:15672/)
+ [RabitMQ Admin Tool](http://localhost:15672/)
 
  user: guest
  pass: guest 
